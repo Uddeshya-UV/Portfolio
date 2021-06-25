@@ -1,0 +1,114 @@
+a{
+  font-family: 'Krona One', sans-serif;
+}
+#myvid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+.section {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      overflow: hidden;
+    }
+  
+    .section h1 {
+      text-align: left;
+      font-size: 4vw;
+      font-family: "Cookie";
+      color:white;
+      padding: 20px;
+      margin: 15px;
+      z-index: 1;
+      opacity: 0.9;
+      text-shadow: 4px 0 0 black;
+    }
+    .section p {
+      text-align: left;
+      font-size: 1rem;
+      font-family: "Courier New";
+      color:white;
+      opacity: 1;
+      text-indent: 10px;
+    }
+
+    #certificate{
+          opacity: 1;
+        
+          border-style: none;
+          border-color: rgb(28, 99, 99);
+          border-width: 5px;
+      }
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+    
+    .color-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgb(9, 1, 12);
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+    }
+
+    pre{
+      font-size: 2.3vw;
+      font-family: "Lobster";
+      color:white;
+      opacity: 0.8;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      text-align: justify;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    nav{
+      background-color: rgb(8, 32, 36);
+      border-style: solid;
+      border-color: black;
+    }
+    #loading {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+      display: block;
+      opacity: 1;
+      background-color: rgb(255, 255, 255);
+      z-index: 99;
+      justify-self: center;
+    }
+    
+    #loading-image {
+      width: 10%;
+      height: 10%;
+      top: 40%;
+      left: 45%;
+      position: relative;
+      border-style: hidden;
+      opacity: 1;
+      border-radius: 0;
+      background-color: rgb(0, 0, 0);
+      z-index: 99;
+      justify-content: center;
+      animation-delay: 1s; background-repeat:no-repeat ;
+      animation-duration: 2s;
+     
+      
+    }

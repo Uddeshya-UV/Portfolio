@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="css/mycss.css" type="text/css">
+  <link rel="stylesheet" href="css/regcss.css" type="text/css">
+  
+  
+  <title>Technical</title>
+
+  <style>
+	 
+	</style>
+
+
+
+</head>
+
+<body>
+	<div id="loading" center`>
+    <img id="loading-image" src="IMG/Loader.gif" alt="Loading..." center />
+  </div>
+	<div class="video-container">
+		<div class="color-overlay"></div>
+		<video autoplay loop muted id="myvid">
+			<source src="IMG/Space.mp4" type="video/mp4" height="1000">
+		</video>
+	  </div>
+	
+<div class="container .hide-on-small-only">
+
+	
+								<form action="skills.html" method="get">
+									<table style=" color: #FFF" class="Techni">
+										<tr>
+											<td><label>Technical<label></td>
+											<td style="text-align: left;">
+												<button  class="button" style="background-color: white";>Back</button>
+											 </td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<p>Languages:</p>
+											</td>
+											<td valign="top">
+												<p>Python, Java</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Database</p>
+											</td>
+											<td valign="top">
+												<p>MySql</p>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<p>Technology</p>
+											</td>
+											<td valign="top">
+												<p>HTML, CSS, JavaScript, Servlet, JSP</p>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<p>IDE/Tools</p>
+											</td>
+											<td valign="top">
+												<p>Eclipse, Visual Studio Code, Atom Editor</p>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<p>Subject of Interest</p>
+											</td>
+											<td valign="top">
+												<p>DatabaseManagementSystem and OperatingSystem</p>
+											</td>
+										</tr>
+										
+										
+										
+										
+									</table>
+								</form>
+								</div>
+	
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+      document.getElementById('Container').style.visibility="hidden";
+      document.getElementById('video-container').style.visibility="hidden";
+      document.getElementById('loading').style.visibility="visible";
+      document.getElementById('loading-image').style.visibility="visible";
+      
+       
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         
+        document.getElementById('loading').style.visibility="hidden";
+      document.getElementById('loading-image').style.visibility="hidden";
+         document.getElementById('video-container').style.visibility="visible";
+         document.getElementById('container').style.visibility="visible";
+      },1000);
+  }
+};
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+	  $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $(window).bind("load", function() {  
+	$('#movie-area').load('index.html');
+}); 
+  })
+  
+  </script>
+</body>
+						
+</body>
+</html>

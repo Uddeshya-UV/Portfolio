@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact us</title>
+	<!-- font awesome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <link rel="stylesheet" href="css/regcss.css">
+ <link rel="stylesheet" href="css/mycss.css">
+ <style>
+	 label{
+		font-family: 'Krona One', sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		 opacity: 0.9;
+	 }
+
+ 
+ 
+ @media only screen and (max-width: 480px) {
+    form {
+        width:450px;
+    }
+    input[type=text], textarea {
+        width:75%;
+	}
+	body {
+        background-color:none;
+       }
+}
+
+
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.querySelector('.button'),
+      loader = document.querySelector('.loader'),
+      check = document.querySelector('.check');
+  
+  btn.addEventListener('click', function () {
+    loader.classList.add('active');    
+  });
+ 
+  loader.addEventListener('animationend', function() {
+    check.classList.add('active'); 
+  });
+});
+
+</script>
+
+
+
+</head>
+
+<body>
+	<div id="loading" center`>
+    <img id="loading-image" src="IMG/Loader.gif" alt="Loading..." center />
+  </div>
+	<div class="video-container">
+		<div class="color-overlay"></div>
+		<video autoplay loop muted id="myvid">
+			<source src="IMG/Space.mp4" type="video/mp4" height="1000">
+		</video>
+	  </div>
+	<!-- modify this form HTML and place wherever you want your form -->
+<div class="container .hide-on-small-only">
+
+	<div class="row">
+					<!-- modify this form HTML and place wherever you want your form -->
+                                
+					
+
+								<!-- your other form fields go here -->
+									
+								<form>
+								
+									<p>Phone no: 8853873024 <a href="tel:+918853873024"><i class="fa fa-phone" style="color: red;" aria-hidden="true"></i></a></p>
+									<p>Email: uddeshya31@gmail.com<a href="mailto:uddeshya31@gmail.com"><i class="fa fa-paper-plane" style="color: red;" aria-hidden="true"></i></a></p>
+						
+									<hr>
+									</form>
+								
+								
+								
+
+								<form
+								action="https://formspree.io/f/xnqogbzv"
+								method="POST"
+								>
+									<table width="500px" style=" color: #FFF">
+										<tr>
+											<td>
+												<label>Contact </label>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<label for="name">Name</label>
+											</td>
+											<td valign="top">
+												<input type="text" style="background-color: white;" name="name" maxlength="50" size="30" style="margin-bottom: 10px"/>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<label for="email">Email</label>
+											</td>
+											<td valign="top">
+												<input type="text" style="background-color: white;" name="email" maxlength="80" size="30" style="margin-bottom: 10px"/>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<label for="email">Message </label>
+											</td>
+											<td valign="top">
+												<textarea name="Comment" maxlength="80" size="40" style="margin-top: 10px"></textarea>
+											</td>
+										</tr>
+										
+										<tr>
+											<td style="text-align:center">
+												<div class="main" center>
+													<button class="button">Send</button>
+													
+													
+													<div class="loader">
+													  <div class="check">
+														<span class="check-one"></span>
+														<span class="check-two"></span>
+													  </div>
+													</div>
+				
+													
+												  </div>
+											</td>
+													<td style="text-align:center">
+														<div class="main" center>
+													
+													
+													
+													<div class="loader">
+													  <div class="check">
+														<span class="check-one"></span>
+														<span class="check-two"></span>
+													  </div>
+													</div>
+				
+													
+												  </div>
+											</td>
+											
+										</tr>
+									</table>
+								</form>
+		</div>
+								</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+      document.getElementById('Container').style.visibility="hidden";
+      document.getElementById('video-container').style.visibility="hidden";
+      document.getElementById('loading').style.visibility="visible";
+      document.getElementById('loading-image').style.visibility="visible";
+      
+       
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         
+        document.getElementById('loading').style.visibility="hidden";
+      document.getElementById('loading-image').style.visibility="hidden";
+         document.getElementById('video-container').style.visibility="visible";
+         document.getElementById('container').style.visibility="visible";
+      },1000);
+  }
+};
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+	  $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $(window).bind("load", function() {  
+	$('#movie-area').load('index.html');
+}); 
+  })
+  
+  </script>
+						
+</body>
+</html>
